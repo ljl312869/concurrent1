@@ -14,7 +14,6 @@ public class NewThread {
             System.out.println("I am extend Thread");
         }
     }
-
     /**
      * 实现Runnable
      */
@@ -25,7 +24,9 @@ public class NewThread {
             System.out.println("I am implements Runnable");
         }
     }
-
+    /**
+     * 实现Callable
+     */
     private static class UseCallable implements Callable<String>{
 
         @Override
@@ -34,17 +35,15 @@ public class NewThread {
             return "Result for Callable<T>";
         }
     }
-
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         UseThread useThread=new UseThread();
         Thread useRunnable=new Thread(new UseRunnable());
-        FutureTask<String> futureTask = new FutureTask<>(new UseCallable());
+        UseCallable useCallable1 = new UseCallable();
+        FutureTask<String> futureTask = new FutureTask<>(useCallable1);
         Thread useCallable=new Thread(futureTask);
         useThread.start();
         useRunnable.start();
         useCallable.start();
         System.out.println(futureTask.get());
-
     }
-
 }
