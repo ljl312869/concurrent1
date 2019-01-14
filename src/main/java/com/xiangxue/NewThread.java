@@ -14,6 +14,7 @@ public class NewThread {
             System.out.println("I am extend Thread");
         }
     }
+
     /**
      * 实现Runnable
      */
@@ -24,6 +25,7 @@ public class NewThread {
             System.out.println("I am implements Runnable");
         }
     }
+
     /**
      * 实现Callable
      */
