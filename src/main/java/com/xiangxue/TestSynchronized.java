@@ -1,5 +1,8 @@
 package com.xiangxue;
 
+/**
+ * 对象锁的synchronized修饰方法和代码块
+ */
 public class TestSynchronized {
     public void test1(){
         synchronized(this){
