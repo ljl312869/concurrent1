@@ -1,4 +1,4 @@
-package com.xiangxue;
+package com.xiangxue.syn;
 
 /**
  * 类锁的修饰（静态）方法和代码块

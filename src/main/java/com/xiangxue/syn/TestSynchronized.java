@@ -1,4 +1,4 @@
-package com.xiangxue;
+package com.xiangxue.syn;
 
 /**
  * 对象锁的synchronized修饰方法和代码块
