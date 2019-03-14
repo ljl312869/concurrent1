@@ -43,9 +43,9 @@ public class Daemon implements Runnable {
 class DaemonSpawn implements Runnable{
 
     @Override
-      public void run() {
-          while(true){
-              Thread.yield();
-          }
-      }
+    public void run() {
+        while(true){
+            Thread.yield();
+        }
+    }
 }
